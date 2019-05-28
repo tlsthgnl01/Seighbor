@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Callbook">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:hint="이름"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/num"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:hint="전화번호"/>
+
+        <Button
+            android:id="@+id/callad"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="전화번호 추가"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/callfix"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="수정"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/callde"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="삭제"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/callcall"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="전화걸기"/>
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/callli"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>
